@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../reset.css">
+    <style>
+        .box{
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+
+            /* the following two lines will help the text be centered */
+            /* it's also kind of an oldfashioned way of doing it */
+            text-align: center;
+            line-height: 200px;
+        }
+
+        .box-block {
+            display: block;
+        }
+
+        .box-inline {
+            display: inline;
+ 
+        }
+        .box-inline-block {
+            display: inline-block;
+        }
+        .box-none {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="box box-block">block</div>
+    <div class="box box-inline">inline</div>
+    <div class="box box-inline-block">inline-block</div>
+    <div class="box box-none">none</div>
+</body>
+</html>
