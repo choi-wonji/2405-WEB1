@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../reset.css">
+    <style>
+        .hi > .bye{
+            color: red;
+        }
+
+        .hi > .bye{
+            color: pink;
+        }
+
+        .test-button[type] {
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+    <!--
+        *: 전체 선택자  used for 초기화
+        img: 태그선택자 tag selector 특정 태그를 초기화 
+        할때 사용 (img{ display: block; } 등)
+        #img-id: 아이다 선택자. 유느크한 값으로 높은 우선순위를 갖는다
+        .img-class: 클래스 선택자. 일반적으로 가장 많이 사용하는 형태
+
+    -->
+    <img id="img-id" class="img-class" src="주소" alt="대체텍스트"
+
+    <!-- img#imgid.img-class is the shortcut -->
+
+    <div class="container">
+        <div class="hi hello">
+             <div class="bye"></div>
+        </div>
+    </div>
+       <!-- 
+        후손선택자: [ .container .bye](0)           [.hi .bye] (0)
+        자손(자식)선택자: [ .container > .bye ] (X)  [.hi > .bye](0)
+
+        후손, 자손 선택자는 css를 구조적으로 만들어줄 수 있는 반면,
+        남용하게되면 유지보수다 힘들짐 so dont use too often
+
+        *[.hi.hello] 띄어쓰기 없음 (후손,자손은 띄어씨기가 중요) 이건
+        hi랑 hello가 있는 class를 찾는다
+       -->
+
+       <input class="test-button" type="button" value="버튼">
+       <!-- [type] : 속성을 가지고 있는 개체를 대상으로 함 (basically just 
+        makes it even more specific)-->
+        
+</body>
+</html>
