@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../reset.css">
+    <style>
+        .reaction-box{
+        width: 200px;
+        height: 200px;
+        background-color: pink;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        }
+        .reaction-box:hover {
+            background-color: coral;
+        }
+
+        .reaction-box:active {
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="reaction-box">
+            반응선택자
+        </div>
+    </div>
+
+    <div class="reaction-container">
+        <h3 class="reaction-title">반응하는제목</h3>
+
+    </div>
+    <style>
+        input: :enabled {
+            background: blue;
+            color: white;
+        }
+        input:disabled {
+            background: black;
+        }
+        input :focus {
+            background: orange;
+        }
+        
+    </style>
+    <h1>enabled</h1>
+    <p>
+        <input type="text" />
+    </p>
+    <h1>disabled</h1>
+    <p>입력을 할 수 없는 상태로 만들기
+        <input disabled="disabled" />
+    </p>
+</body>
+</html>
